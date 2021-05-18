@@ -1,0 +1,5 @@
+package com.anne.savvy.controller;
+
+public class ResourceNotFoundException {
+
+}

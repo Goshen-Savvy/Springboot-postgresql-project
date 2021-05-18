@@ -1,0 +1,32 @@
+package com.anne.savvy.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.anne.savvy.model.Ideation;
+import com.anne.savvy.repository.IdeationRepository;
+
+@RestController
+@RequestMapping("/api/v1/")
+public class IdeationController {
+	
+	@Autowired
+	private IdeationRepository ideationRepository;
+	
+	//get ideation
+	@GetMapping("ideation")
+	public List<Ideation> getAllIdeation(){
+		return this.ideationRepository.findAll();
+	}
+	
+	
+	//get ideation by id
+	//save ideation
+	//update ideation
+	//delete ideation
+
+}

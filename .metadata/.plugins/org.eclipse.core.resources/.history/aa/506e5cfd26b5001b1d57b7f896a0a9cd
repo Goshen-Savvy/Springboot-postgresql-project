@@ -1,0 +1,5 @@
+package com.anne.savvy.exception;
+
+public class ErrorMessages {
+
+}

@@ -1,0 +1,5 @@
+package com.anne.savvy.repository;
+
+public interface IdeationRepository {
+
+}

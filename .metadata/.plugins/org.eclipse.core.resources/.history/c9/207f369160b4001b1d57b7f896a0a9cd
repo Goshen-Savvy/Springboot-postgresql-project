@@ -1,0 +1,61 @@
+package com.anne.savvy.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "ideation")
+public class Ideation {
+	
+	@Id
+	private long id;
+	private String topic;
+	private String firstName;
+	private String lastName;
+	private String description;
+	
+	public Ideation() {
+		super();
+	}
+
+	public Ideation(String topic, String firstName, String lastName, String description) {
+		super();
+		this.topic = topic;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.description = description;
+	}
+	
+	public long getId() {
+		return id;
+	}
+	public void setId(long id) {
+		this.id = id;
+	}
+	public String getTopic() {
+		return topic;
+	}
+	public void setTopic(String topic) {
+		this.topic = topic;
+	}
+	public String getFirstName() {
+		return firstName;
+	}
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	public String getLastName() {
+		return lastName;
+	}
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+}
